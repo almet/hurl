@@ -20,13 +20,6 @@ module Views
       not @hurl.empty?
     end
 
-    def default_hurls
-      super.sort.map do |name, params|
-        dname = name.downcase
-        { :name => name, :sha => sha(params), :class => dname.split(' ')[0] }
-      end
-    end
-
     def hide_request_and_response?
       @view.nil?
     end

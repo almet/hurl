@@ -32,7 +32,7 @@ module Hurl
     def initialize(*args)
       super
       @debug = ENV['DEBUG']
-      setup_default_hurls
+      # setup_default_hurls
     end
 
 
